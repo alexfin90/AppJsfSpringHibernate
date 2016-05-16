@@ -1,12 +1,12 @@
-package com.journaldev.prime.faces.beans;
+package com.alex.prime.faces.beans;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
 
-import com.journaldev.jpa.data.Employee;
-import com.journaldev.spring.service.EmployeeService;
+import com.alex.jpa.data.Employee;
+import com.alex.spring.service.EmployeeService;
 
 @ManagedBean
 @SessionScoped

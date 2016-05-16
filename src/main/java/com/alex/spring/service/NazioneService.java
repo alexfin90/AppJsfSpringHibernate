@@ -1,4 +1,4 @@
-package com.journaldev.spring.service;
+package com.alex.spring.service;
 import java.util.ArrayList;
 import java.util.List;
 import javax.annotation.PostConstruct;
@@ -7,7 +7,7 @@ import javax.faces.bean.ManagedBean;
 
 import org.springframework.stereotype.Component;
 
-import com.journaldev.jpa.data.Nazione;
+import com.alex.jpa.data.Nazione;
 
 
 

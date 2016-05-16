@@ -1,4 +1,4 @@
-package com.journaldev.prime.faces.beans;
+package com.alex.prime.faces.beans;
 import java.io.IOException;
 import java.util.List;
 import javax.annotation.PostConstruct;
@@ -6,10 +6,11 @@ import javax.faces.bean.ManagedBean;
 import javax.faces.bean.ManagedProperty;
 import javax.faces.bean.SessionScoped;
 import javax.faces.context.FacesContext;
-import com.journaldev.jpa.data.Nazione;
-import com.journaldev.jpa.data.Users;
-import com.journaldev.spring.service.NazioneService;
-import com.journaldev.spring.service.UsersHome;
+
+import com.alex.jpa.data.Nazione;
+import com.alex.jpa.data.Users;
+import com.alex.spring.service.NazioneService;
+import com.alex.spring.service.UsersHome;
 
 
 @ManagedBean

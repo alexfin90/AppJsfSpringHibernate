@@ -1,4 +1,4 @@
-package com.journaldev.spring.service;
+package com.alex.spring.service;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -6,7 +6,7 @@ import javax.persistence.PersistenceContext;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.journaldev.jpa.data.Employee;
+import com.alex.jpa.data.Employee;
 
 @Component
 public class EmployeeService {

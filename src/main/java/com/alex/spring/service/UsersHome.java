@@ -1,4 +1,4 @@
-package com.journaldev.spring.service;
+package com.alex.spring.service;
 
 // default package
 // Generated May 16, 2016 12:53:11 PM by Hibernate Tools 3.4.0.CR1
@@ -12,7 +12,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.stereotype.Component;
 
-import com.journaldev.jpa.data.Users;
+import com.alex.jpa.data.Users;
 
 /**
  * Home object for domain model class Users.

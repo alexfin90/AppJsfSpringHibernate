@@ -4,8 +4,8 @@ import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.FacesConverter;
 
-import com.journaldev.jpa.data.Nazione;
-import com.journaldev.spring.service.NazioneService;
+import com.alex.jpa.data.Nazione;
+import com.alex.spring.service.NazioneService;
 
 
 @FacesConverter("nazioneConverter")

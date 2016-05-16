@@ -1,4 +1,4 @@
-package com.journaldev.jpa.data;
+package com.alex.jpa.data;
 
 import java.io.Serializable;
 

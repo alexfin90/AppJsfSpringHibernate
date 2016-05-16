@@ -31,13 +31,25 @@ public class LoginUser {
 
 		if (u == null) {
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("Utente non presente!"));
-		} else if (u != null && value==true) {
+		} else if (u != null && value == true) {
 
-			try {
-				FacesContext.getCurrentInstance().getExternalContext().redirect("welcome.xhtml");
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+			if (u.getUsername().compareTo("admin") == 0) {
+
+				try {
+					FacesContext.getCurrentInstance().getExternalContext().redirect("datatable.xhtml");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+			} else {
+				try {
+					FacesContext.getCurrentInstance().getExternalContext().redirect("welcome.xhtml");
+				} catch (IOException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
 			}
 		} else if (u != null && value == false) {
 			FacesContext.getCurrentInstance().addMessage(null, new FacesMessage("password errata!"));

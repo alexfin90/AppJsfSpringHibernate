@@ -1,8 +1,9 @@
 package com.alex.spring.service;
 
+import java.util.List;
+
 // default package
 // Generated May 16, 2016 12:53:11 PM by Hibernate Tools 3.4.0.CR1
-
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -16,6 +17,7 @@ import com.alex.jpa.data.Users;
 
 /**
  * Home object for domain model class Users.
+ * 
  * @see .Users
  * @author Hibernate Tools
  */
@@ -26,7 +28,7 @@ public class UsersHome {
 
 	@PersistenceContext
 	private EntityManager entityManager;
-	
+
 	@Transactional
 	public void persist(Users transientInstance) {
 		log.debug("persisting Users instance");
@@ -66,12 +68,18 @@ public class UsersHome {
 	public Users findById(String id) {
 		log.debug("getting Users instance with id: " + id);
 		try {
-			Users instance = entityManager.find(Users.class, id);		
+			Users instance = entityManager.find(Users.class, id);
 			log.debug("get successful");
 			return instance;
 		} catch (RuntimeException re) {
 			log.error("get failed", re);
 			throw re;
 		}
+	}
+
+	public List<Users> getUsers() {
+		// TODO Auto-generated method stub
+		return entityManager.createQuery("select u from Users u ", Users.class).getResultList();
+
 	}
 }

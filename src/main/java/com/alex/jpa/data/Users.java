@@ -1,4 +1,4 @@
-package com.alex.jpa.data;
+ package com.alex.jpa.data;
 
 // default package
 // Generated May 16, 2016 12:49:57 PM by Hibernate Tools 3.4.0.CR1
